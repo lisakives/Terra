@@ -21,7 +21,7 @@ if os.path.isdir(os.path.join('..','ios','Terra')):
     import shutil; shutil.copy('ios.html', os.path.join('..','ios','Terra','index.html'))
 
 # GitHub Pages (docs/): the installable web app with push reminders through GymTrack's push server
-PUSH_SERVER = ''  # GymTrack's Cloudflare push server, e.g. https://gymtrack-push.<name>.workers.dev
+PUSH_SERVER = 'https://gymtrack-push.roni-koukka.workers.dev'  # GymTrack's Cloudflare push server
 docs=next((d for d in [os.path.join('..','docs'), os.path.join('..','terra-repo','docs')] if os.path.isdir(d)), None)
 if docs:
     head='<!DOCTYPE html>\n<html lang="fi">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n<meta name="theme-color" content="#0e1320">\n<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">\n<meta name="apple-mobile-web-app-title" content="Terra">\n<link rel="manifest" href="./manifest.webmanifest">\n<link rel="apple-touch-icon" href="./icon-180.png">\n<link rel="icon" href="./icon-192.png">\n<script>window.TERRA_HOSTED=true;window.TERRA_PUSH_SERVER='+json.dumps(PUSH_SERVER)+'</script>\n<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>\n'

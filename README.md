@@ -24,7 +24,7 @@ Terra-verkkosovellus on kansiossa `docs/`, ja sen voi julkaista GitHub Pagesissa
 
 Muistutukset kulkevat **GymTrackin Cloudflare-push-palvelimen** kautta samalla protokollalla kuin GymTrackissa
 (`/api/vapid`, `/api/subscribe`, `/api/sync`). Terralla on palvelimella oma tunniste. Palvelimen osoite asetetaan
-`web/build.py`:n `PUSH_SERVER`-riville.
+`web/build.py`:n `PUSH_SERVER`-riville (nyt `https://gymtrack-push.roni-koukka.workers.dev`).
 
 Avaa sivu iPhonen Safarissa → **Jaa → Lisää Koti-valikkoon** → avaa Terra Koti-valikosta → **Asetukset → Ilmoitukset** päälle.
 
