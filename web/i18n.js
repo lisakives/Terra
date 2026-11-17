@@ -528,3 +528,4 @@ Object.assign(FI, {
 });
 Object.assign(FI, { 'Open GymTrack': 'Avaa GymTrack', 'In progress': 'Käynnissä', 'Tomorrow': 'Huomenna', 'Your gym log': 'Salipäiväkirjasi', 'A workout is in progress. Tap to continue.': 'Treeni on kesken. Jatka napauttamalla.', 'Last:': 'Viimeksi:', 'Programs, sets, records and a rest timer.': 'Ohjelmat, sarjat, ennätykset ja palautusajastin.' });
 Object.assign(FI, { 'On iPhone: tap Share → Add to Home Screen, then open Terra from there to get reminders.': 'iPhonessa: napauta Jaa → Lisää Koti-valikkoon ja avaa Terra sieltä, niin muistutukset toimivat.', 'Reminders could not be switched on. Try again in a moment.': 'Muistutuksia ei saatu päälle. Yritä hetken päästä uudelleen.' });
+Object.assign(FI, { 'Reminders on this page need the Terra web app. Open it from the home screen.': 'Tämän sivun muistutukset vaativat Terra-verkkosovelluksen. Avaa se Koti-valikosta.' });

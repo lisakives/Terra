@@ -17,7 +17,18 @@ python3 build.py
 
 Tämä kirjoittaa `server/public/index.html` (verkkoversio) ja `ios/Terra/index.html` (iPhone).
 
-## Cloudflare: verkkoversio ja muistutukset (noin 10 minuuttia)
+## Verkkoversio ja muistutukset (GitHub Pages + GymTrackin push-palvelin)
+
+Terra-verkkosovellus on kansiossa `docs/`, ja sen voi julkaista GitHub Pagesissa puhelimellakin:
+**Settings → Pages → Branch: `main`, kansio `/docs` → Save.** Osoite on `https://lisakives.github.io/Terra/`.
+
+Muistutukset kulkevat **GymTrackin Cloudflare-push-palvelimen** kautta samalla protokollalla kuin GymTrackissa
+(`/api/vapid`, `/api/subscribe`, `/api/sync`). Terralla on palvelimella oma tunniste. Palvelimen osoite asetetaan
+`web/build.py`:n `PUSH_SERVER`-riville.
+
+Avaa sivu iPhonen Safarissa → **Jaa → Lisää Koti-valikkoon** → avaa Terra Koti-valikosta → **Asetukset → Ilmoitukset** päälle.
+
+## Vaihtoehto: oma Cloudflare Worker (noin 10 minuuttia)
 
 Tarvitset ilmaisen Cloudflare-tilin ja Node.js:n. Aja `server`-kansiossa:
 

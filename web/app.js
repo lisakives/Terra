@@ -227,7 +227,7 @@ function remList() {
 /* Terra AI talks only to Terra's own server (see terra-server/). The server holds the API key;
    the app never has one. Put the deployed server address here, for example
    'https://terra-ai.yourname.workers.dev'. Empty = Terra AI shows as not connected yet. */
-const AI_ENDPOINT = window.TERRA_HOSTED ? location.origin : ''; // the hosted web app talks to the server it came from
+const AI_ENDPOINT = window.TERRA_AI_SERVER || ''; // set in the hosted web app when a Terra AI server is running
 const AI_ENABLED = true;
 /* In the iPhone app, Terra AI can also run through the app itself when a key was added in Xcode
    (Secrets.plist). The key stays in the native code and never reaches this page. */
