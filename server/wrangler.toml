@@ -1,0 +1,19 @@
+name = "terra"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+# The Terra web app (built by web/build.py)
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+# Reminders, the VAPID key pair and today's progress. Create it once:
+#   npx wrangler kv namespace create TERRA
+# and paste the id it prints below.
+[[kv_namespaces]]
+binding = "TERRA"
+id = "PASTE_KV_ID_HERE"
+
+# Every minute: send the reminders that are due in each person's own time zone
+[triggers]
+crons = ["* * * * *"]

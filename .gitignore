@@ -1,0 +1,13 @@
+# API keys never go to GitHub
+ios/Terra/Secrets.plist
+.dev.vars
+.env*
+# Build output and editor files
+web/terra.html
+web/test.html
+web/ios.html
+node_modules/
+.wrangler/
+xcuserdata/
+DerivedData/
+.DS_Store

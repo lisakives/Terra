@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Terra uses the camera for the alarm photo task: you take a photo of your chosen object to switch the alarm off. Photos stay on your phone.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Pick a photo for your alarm background or your alarm object.</string>
+	<key>NSSupportsLiveActivities</key>
+	<true/>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>terra</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>terra</string>
+			</array>
+		</dict>
+	</array>
+	<key>NSAlarmKitUsageDescription</key>
+	<string>Terra rings your one wake-up alarm at the time you choose. A small twist in the app switches it off.</string>
+</dict>
+</plist>

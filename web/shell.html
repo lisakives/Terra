@@ -1,0 +1,38 @@
+<title>Terra</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500..700&display=swap">
+<style>
+/*CSS*/
+</style>
+<div class="ambient" aria-hidden="true"><i></i><i></i><i></i></div>
+<script>document.documentElement.classList.add('theme-blue')</script>
+<div class="splash" id="splash" role="img" aria-label="Terra">
+  <svg class="sp-scene" viewBox="0 0 120 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="spSky" x1="0" y1="0" x2="0" y2="1"><stop offset=".38" stop-color="#1c1538"/><stop offset=".5" stop-color="#3b2d6e"/><stop offset=".58" stop-color="#a8628f"/><stop offset=".63" stop-color="#f4a271"/></linearGradient>
+      <linearGradient id="spSun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd27a"/><stop offset="1" stop-color="#ff6f5a"/></linearGradient>
+      <radialGradient id="spGlow" cx="60" cy="130" r="60" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffb27a" stop-opacity=".5"/><stop offset="1" stop-color="#ffb27a" stop-opacity="0"/></radialGradient>
+    </defs>
+    <rect x="-200" y="-200" width="520" height="520" fill="url(#spSky)"/>
+    <circle class="sp-glow" cx="60" cy="130" r="60" fill="url(#spGlow)"/>
+    <g class="sp-stars" fill="#fff4e0"><circle cx="18" cy="30" r=".7"/><circle cx="40" cy="14" r=".5"/><circle cx="92" cy="22" r=".65"/><circle cx="106" cy="48" r=".45"/><circle cx="10" cy="64" r=".45"/><circle cx="74" cy="56" r=".4"/><circle cx="58" cy="8" r=".4"/><circle cx="28" cy="96" r=".4"/><circle cx="100" cy="92" r=".45"/></g>
+    <g transform="translate(-4 72)">
+      <circle class="lg-sun" cx="64" cy="58" r="21" fill="url(#spSun)"/>
+      <path class="lg-h1" d="M-60,74 C22,56 54,52 84,58 C100,61 112,66 180,72 L180,220 L-60,220 Z" fill="#6f9e8a"/>
+      <path class="lg-h2" d="M-60,92 C26,78 64,76 180,96 L180,220 L-60,220 Z" fill="#3f6e63"/>
+      <path class="lg-road" d="M30,206 C26,182 60,170 58,150 C57,138 50,132 52,124 C56,110 70,104 64,96 C58,88 46,86 52,78 C56,72 64,70 70,64" fill="none" stroke="#ffe3c2" stroke-width="5" stroke-linecap="round" pathLength="1"/>
+    </g>
+    <path id="spArc" d="M30,116.3 A33 33 0 0 1 90,116.3" fill="none"/>
+    <text class="sp-arc-word" aria-hidden="true"><textPath href="#spArc" startOffset="50%" text-anchor="middle"><tspan class="lw-letter" style="--k:0">T</tspan><tspan class="lw-letter" style="--k:1">e</tspan><tspan class="lw-letter" style="--k:2">r</tspan><tspan class="lw-letter" style="--k:3">r</tspan><tspan class="lw-letter" style="--k:4">a</tspan></textPath></text>
+  </svg>
+</div>
+
+<main class="app" id="view" aria-live="polite"></main>
+<div class="composer" id="composer" hidden><form data-form="chat" autocomplete="off"><label class="sr" for="chatIn">Message Terra AI</label><input type="text" id="chatIn" placeholder="Write a message to Terra AI…" maxlength="600"><button type="submit" aria-label="Send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button></form></div>
+<div class="tabbar" id="tabbar" hidden><nav id="tabs" aria-label="Sections"></nav></div>
+<script>
+/*CHARS*/
+/*APP*/
+</script>
